@@ -1,0 +1,40 @@
+{
+  "MAIL_ALL_COPYRIGHT": "french copyright",
+  "MAIL_ALL_FOOTER_1": " french my footer 1",
+  "MAIL_ALL_FOOTER_2_STR": "french my footer str 2",
+  "MAIL_ALL_FOOTER_3": "french my all footer 3",
+  "MAIL_ALL_FOOTER_4": "french my all footer 4",
+  "MAIL_ALL_NO_EMAIL_1": "french all no email key",
+  "MAIL_ALL_NO_EMAIL_2": "french all no email key",
+
+  "RESET_PASSWORD_FOLLOW_LINK": "french reset password translation",
+  "baseUrl": "french www",
+  "token": "french tokenExample",
+
+  "MAIL_NEWCAMPAIGN_TITLE_1": "french mail title",
+  "MAIL_NEWCAMPAIGN_TITLE_2": "french mail title",
+  "MAIL_NEWCAMPAIGN_PARAGRAPH_1": "french paragraph",
+  "MAIL_NEWCAMPAIGN_EARN_MAX": "french earn max",
+  "MAIL_NEWCAMPAIGN_PARTICIPATE": "french NEW PARTICIPATE",
+  "DOWNLOAD_MOBILE_APPLICATIONS": "french MOBILE APP",
+  "MAIL_REGISTRATION_SHARE_THIS_1": "french SHARE 1",
+  "MAIL_REGISTRATION_SHARE_THIS_2": "french SHARE 2",
+
+  "MAIL_REGISTRATION_TITLE_1": "french REGISTRATION 1",
+  "MAIL_REGISTRATION_TITLE_2": "french REGISTRATION 2",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_1": "french REGISTRATION PARAGRAPH",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_2": "french REGISTRATION PARAGRAPH 2",
+  "MAIL_REGISTRATION_LOGIN_NOW": "french REGISTRATION LOGIN BUTTON",
+  "MAIL_REGISTRATION_HOW_IT_WORKS": "french REGISTRATION HOW IT WORKS",
+  "MAIL_REGISTRATION_STEP_1": "french REGISTRATION STEP 1",
+  "MAIL_REGISTRATION_STEP_2": "french REGISTRATION STEP 2",
+  "MAIL_REGISTRATION_STEP_3": "french REGISTRATION STEP 3",
+  "MAIL_REGISTRATION_START_GET_MONEY": "french REGISTRATION GET MONEY",
+
+  "var": {
+    "campaign": {
+      "maxPublisherRevenue": "french max publish example",
+      "campaignMailNotice" : "french mail notice"
+    }
+  }
+}

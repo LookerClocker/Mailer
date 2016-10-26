@@ -1,22 +1,32 @@
 <tr>
     <td bgcolor="#ffffff" align="center" style="padding: 20px 0px;">
-        <hr style="width: 50%;">
-        <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+        <hr style="width: 50%; padding-bottom: 3%;">
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="70%">
             <tr>
                 <td align="center" valign="top" width="500">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"
                            style="max-width: 500px;" class="responsive-table">
                         <tr>
                             <td align="center"
-                                style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#666666;">
-                                1234 Main Street, Anywhere, MA 01234, USA
+                                style="font-family: Helvetica, Arial, sans-serif;
+                                font-size: 17px; color: rgba(102, 102, 102, 0.58);">
+                                <span style="position:relative; bottom: 15px;"><%=data.MAIL_ALL_COPYRIGHT%></span>
+                                <br>
+                                <%=data.MAIL_ALL_FOOTER_1%>
+                                <br>
+                                <%=data.MAIL_ALL_FOOTER_2_STR%>
                                 <br>
                                 <a href="http://litmus.com" target="_blank"
-                                   style="color: #666666; text-decoration: none;">Unsubscribe</a>
-                                <span style="font-family: Arial, sans-serif; font-size: 12px; color: #444444;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                   style="color: rgba(102, 102, 102, 0.58); text-decoration: none;"> <%=data.MAIL_ALL_FOOTER_3%></a>
+                                <span style="font-family: Arial, sans-serif; font-size: 12px; color: rgba(102, 102, 102, 0.58);">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                 <a href="http://litmus.com" target="_blank"
-                                   style="color: #666666; text-decoration: none;">View this email in your
-                                    browser</a>
+                                   style=" color: #e13839;text-decoration: none;"> <%=data.MAIL_ALL_FOOTER_4%></a>
+                                <br>
+                                <a href="http://litmus.com" target="_blank"
+                                   style="color: rgba(102, 102, 102, 0.58); text-decoration: none;"> <%=data.MAIL_ALL_NO_EMAIL_1%></a>
+                                <span style="font-family: Arial, sans-serif; font-size: 12px; color: rgba(102, 102, 102, 0.58);">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                <a href="http://litmus.com" target="_blank"
+                                   style="text-decoration: none;"> <%=data.MAIL_ALL_NO_EMAIL_2%>.</a>
                             </td>
                         </tr>
                     </table>
