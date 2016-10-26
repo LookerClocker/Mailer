@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.render('campaign_created')
+  res.render('campaign_none_subscribe')
 });
 
 // app.get('/app', function(req, res) {
