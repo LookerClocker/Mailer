@@ -5,7 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
+var fs = require('fs');
 
+// var mandrill = require('./public/javascripts/mandrill-API.js');
+var mandrill = require('mandrill-api/mandrill'),
+    mandrill_client = new mandrill.Mandrill('GJNenewolLmIAzBG8_4f3g');
 var app = express();
 
 // view engine setup
@@ -18,9 +22,57 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/view-email', function (req, res) {
-    var defaultLanguage = 'fr';
+function getFile() {
+    var defaultLanguage = 'en';
     var data = require('./data/translation-' + defaultLanguage + '.json');
+    return data;
+}
+
+var data = getFile();
+
+app.post('/test-page', function (req, res) {
+    var fromEmail = req.body.fromEmail,
+        fromName = req.body.fromName,
+        subject = req.body.subject,
+        recipients = req.body.recipients,
+        html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
+            if(err) {
+                console.log(err);
+            }
+            if (result) {
+                html = result;
+                sendEmail(html);
+            }
+        });
+
+    function sendEmail() {
+        mandrill_client.messages.send({
+            "message": {
+                "from_email": fromEmail,
+                "from_name": fromName,
+                "to": [{"email": recipients}],
+                "subject": subject,
+                "html": html
+            }
+        });
+    }
+
+    res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + ''+ html );
+});
+
+app.get('/view-email/campaign_created', function (req, res) {
+    res.render('campaign_created', {data: data});
+});
+
+app.get('/view-email/campaign_created', function (req, res) {
+    res.render('campaign_created', {data: data});
+});
+
+app.get('/view-email/campaign_registration', function (req, res) {
+    res.render('campaign_registration', {data: data});
+});
+
+app.get('/view-email/forget_password', function (req, res) {
     res.render('campaign_forget_password', {data: data});
 });
 

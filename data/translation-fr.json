@@ -1,40 +1,40 @@
 {
-  "MAIL_ALL_COPYRIGHT": "french copyright",
-  "MAIL_ALL_FOOTER_1": " french my footer 1",
-  "MAIL_ALL_FOOTER_2_STR": "french my footer str 2",
-  "MAIL_ALL_FOOTER_3": "french my all footer 3",
-  "MAIL_ALL_FOOTER_4": "french my all footer 4",
-  "MAIL_ALL_NO_EMAIL_1": "french all no email key",
-  "MAIL_ALL_NO_EMAIL_2": "french all no email key",
+  "MAIL_ALL_COPYRIGHT": "© Copyright 2015 - VALUE YOUR NETWORK - Tous droits réservés",
+  "MAIL_ALL_FOOTER_1": "Vous recevez cet email suite à votre inscription à Value Your Network.",
+  "MAIL_ALL_FOOTER_2_STR": "Pour ne pas passer à côté des prochaines campagnes,",
+  "MAIL_ALL_FOOTER_3": "pensez à",
+  "MAIL_ALL_FOOTER_4": "ajouter notre email à votre carnet d'adresses.",
+  "MAIL_ALL_NO_EMAIL_1": "Pour ne plus recevoir d'emails, connectez-vous et changez vos paramètres dans le menu",
+  "MAIL_ALL_NO_EMAIL_2": "mon compte",
 
-  "RESET_PASSWORD_FOLLOW_LINK": "french reset password translation",
+  "RESET_PASSWORD_FOLLOW_LINK": "Pour réinitialiser votre mot de passe, veuillez suivre le lien suivant :",
   "baseUrl": "french www",
   "token": "french tokenExample",
 
-  "MAIL_NEWCAMPAIGN_TITLE_1": "french mail title",
-  "MAIL_NEWCAMPAIGN_TITLE_2": "french mail title",
-  "MAIL_NEWCAMPAIGN_PARAGRAPH_1": "french paragraph",
-  "MAIL_NEWCAMPAIGN_EARN_MAX": "french earn max",
-  "MAIL_NEWCAMPAIGN_PARTICIPATE": "french NEW PARTICIPATE",
-  "DOWNLOAD_MOBILE_APPLICATIONS": "french MOBILE APP",
-  "MAIL_REGISTRATION_SHARE_THIS_1": "french SHARE 1",
-  "MAIL_REGISTRATION_SHARE_THIS_2": "french SHARE 2",
+  "MAIL_NEWCAMPAIGN_TITLE_1": "C'est parti.",
+  "MAIL_NEWCAMPAIGN_TITLE_2": "Une nouvelle campagne est en ligne, spécialement pour vous !",
+  "MAIL_NEWCAMPAIGN_PARAGRAPH_1": "La campagne vient tout juste de commencer. Plus vous relayez la campagne rapidement, plus votre potentiel de gain est important.",
+  "MAIL_NEWCAMPAIGN_EARN_MAX": "Gagnez jusqu'à",
+  "MAIL_NEWCAMPAIGN_PARTICIPATE": "PARTICIPER À LA CAMPAGNE",
+  "DOWNLOAD_MOBILE_APPLICATIONS": "Télécharger la version mobile, accélérer la création de contenu",
+  "MAIL_REGISTRATION_SHARE_THIS_1": "Faites passer :",
+  "MAIL_REGISTRATION_SHARE_THIS_2": "faites connaître ValueYourNetwork à vos amis !",
 
-  "MAIL_REGISTRATION_TITLE_1": "french REGISTRATION 1",
-  "MAIL_REGISTRATION_TITLE_2": "french REGISTRATION 2",
-  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_1": "french REGISTRATION PARAGRAPH",
-  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_2": "french REGISTRATION PARAGRAPH 2",
-  "MAIL_REGISTRATION_LOGIN_NOW": "french REGISTRATION LOGIN BUTTON",
-  "MAIL_REGISTRATION_HOW_IT_WORKS": "french REGISTRATION HOW IT WORKS",
-  "MAIL_REGISTRATION_STEP_1": "french REGISTRATION STEP 1",
-  "MAIL_REGISTRATION_STEP_2": "french REGISTRATION STEP 2",
-  "MAIL_REGISTRATION_STEP_3": "french REGISTRATION STEP 3",
-  "MAIL_REGISTRATION_START_GET_MONEY": "french REGISTRATION GET MONEY",
+  "MAIL_REGISTRATION_TITLE_1": "Félicitations,",
+  "MAIL_REGISTRATION_TITLE_2": "Vous êtes maintenant un membre de Value Your Network.",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_1": "Votre compte est en cours d’analyse. N’hésitez pas à connecter tous vos réseaux sociaux dans le menu « Réseaux » afin d’accélérer l’adéquation des campagnes avec votre compte.",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_2": "De nouvelles campagnes vous seront proposées en fonction de votre profil, vous recevrez un email pour vous avertir.  A très vite !",
+  "MAIL_REGISTRATION_LOGIN_NOW": "CONNECTEZ-VOUS MAINTENANT",
+  "MAIL_REGISTRATION_HOW_IT_WORKS": "Comment ça marche",
+  "MAIL_REGISTRATION_STEP_1": "Connectez-vous à Value Your Network",
+  "MAIL_REGISTRATION_STEP_2": "Sélectionnez vos campagnes",
+  "MAIL_REGISTRATION_STEP_3": "Postez votre message sur vos réseaux sociaux",
+  "MAIL_REGISTRATION_START_GET_MONEY": "Et commencez à gagner de l'argent. C'est aussi simple que ça !",
 
   "var": {
     "campaign": {
-      "maxPublisherRevenue": "french max publish example",
-      "campaignMailNotice" : "french mail notice"
+      "maxPublisherRevenue": "french variable1",
+      "campaignMailNotice" : "french variable2"
     }
   }
 }

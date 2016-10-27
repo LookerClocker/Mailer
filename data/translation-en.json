@@ -1,40 +1,40 @@
 {
-  "MAIL_ALL_COPYRIGHT": "my copyright",
-  "MAIL_ALL_FOOTER_1": "my footer 1",
-  "MAIL_ALL_FOOTER_2_STR": "my footer str 2",
-  "MAIL_ALL_FOOTER_3": "my all footer 3",
-  "MAIL_ALL_FOOTER_4": "my all footer 4",
-  "MAIL_ALL_NO_EMAIL_1": "all no email key",
-  "MAIL_ALL_NO_EMAIL_2": "all no email key",
+  "MAIL_ALL_COPYRIGHT": "© Copyright 2015 - VALUE YOUR NETWORK - All rights reserved",
+  "MAIL_ALL_FOOTER_1": "You receive this e-mail since you are registered to  Value Your Network.",
+  "MAIL_ALL_FOOTER_2_STR": "Not to miss the next campaigns,",
+  "MAIL_ALL_FOOTER_3": "consider",
+  "MAIL_ALL_FOOTER_4": "adding our email to your address book.",
+  "MAIL_ALL_NO_EMAIL_1": "If you wish to no longer receive e-mail notifications,",
+  "MAIL_ALL_NO_EMAIL_2": "click here",
 
-  "RESET_PASSWORD_FOLLOW_LINK": "reset password translation",
+  "RESET_PASSWORD_FOLLOW_LINK": "To reset your password, please follow this link:",
   "baseUrl": "www",
   "token": "tokenExample",
 
-  "MAIL_NEWCAMPAIGN_TITLE_1": "mail title",
-  "MAIL_NEWCAMPAIGN_TITLE_2": "mail title",
-  "MAIL_NEWCAMPAIGN_PARAGRAPH_1": "paragraph",
-  "MAIL_NEWCAMPAIGN_EARN_MAX": "earn max",
-  "MAIL_NEWCAMPAIGN_PARTICIPATE": "NEW PARTICIPATE",
-  "DOWNLOAD_MOBILE_APPLICATIONS": "MOBILE APP",
-  "MAIL_REGISTRATION_SHARE_THIS_1": "SHARE 1",
-  "MAIL_REGISTRATION_SHARE_THIS_2": "SHARE 2",
+  "MAIL_NEWCAMPAIGN_TITLE_1": "Hurry up!",
+  "MAIL_NEWCAMPAIGN_TITLE_2": "A new campaign is online on Value Your Network.",
+  "MAIL_NEWCAMPAIGN_PARAGRAPH_1_REMINDER": "this campaign is still available for you. take part in it as soon as possible.",
+  "MAIL_NEWCAMPAIGN_EARN_MAX": "Earn maybe",
+  "MAIL_NEWCAMPAIGN_PARTICIPATE": "PARTICIPATE IN THE CAMPAIGN",
+  "DOWNLOAD_MOBILE_APPLICATIONS": "Donwload the mobile version, create content faster",
+  "MAIL_REGISTRATION_SHARE_THIS_1": "Do not hesitate to",
+  "MAIL_REGISTRATION_SHARE_THIS_2": "share the good deal!",
 
-  "MAIL_REGISTRATION_TITLE_1": "REGISTRATION 1",
-  "MAIL_REGISTRATION_TITLE_2": "REGISTRATION 2",
-  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_1": "REGISTRATION PARAGRAPH",
-  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_2": "REGISTRATION PARAGRAPH 2",
-  "MAIL_REGISTRATION_LOGIN_NOW": "REGISTRATION LOGIN BUTTON",
-  "MAIL_REGISTRATION_HOW_IT_WORKS": "REGISTRATION HOW IT WORKS",
-  "MAIL_REGISTRATION_STEP_1": "REGISTRATION STEP 1",
-  "MAIL_REGISTRATION_STEP_2": "REGISTRATION STEP 2",
-  "MAIL_REGISTRATION_STEP_3": "REGISTRATION STEP 3",
-  "MAIL_REGISTRATION_START_GET_MONEY": "REGISTRATION GET MONEY",
+  "MAIL_REGISTRATION_TITLE_1": "Congratulations,",
+  "MAIL_REGISTRATION_TITLE_2": "You are now a member of Value Your Network.",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_1": "Sign in to your account to find out and start the new campaigns,",
+  "MAIL_REGISTRATION_LOGIN_PARAGRAPH_2": "to start earning money with your posts!",
+  "MAIL_REGISTRATION_LOGIN_NOW": "SIGN IN NOW",
+  "MAIL_REGISTRATION_HOW_IT_WORKS": "How it works",
+  "MAIL_REGISTRATION_STEP_1": "Sign in to Value Your Network",
+  "MAIL_REGISTRATION_STEP_2": "Select your campaigns",
+  "MAIL_REGISTRATION_STEP_3": "Post your message on your social networks",
+  "MAIL_REGISTRATION_START_GET_MONEY": "And start earning money. It's really that simple!",
 
   "var": {
     "campaign": {
-      "maxPublisherRevenue": "max publish example",
-      "campaignMailNotice" : "mail notice"
+      "maxPublisherRevenue": "variable1",
+      "campaignMailNotice" : "variable2"
     }
   }
 }
