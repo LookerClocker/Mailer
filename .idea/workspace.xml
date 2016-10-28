@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c35dd7-9152-4146-9189-b3227967d773" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partials/reminder_campaign_header.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/campaign_reminder.ejs" afterPath="$PROJECT_DIR$/views/campaign_reminder.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/new_campaign_body.ejs" afterPath="$PROJECT_DIR$/views/partials/new_campaign_body.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/end_campaign_body.ejs" afterPath="$PROJECT_DIR$/views/partials/end_campaign_body.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/end_campaign_header.ejs" afterPath="$PROJECT_DIR$/views/partials/end_campaign_header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/none_subscribe_header.ejs" afterPath="$PROJECT_DIR$/views/partials/none_subscribe_header.ejs" />
     </list>
     <ignored path="Mailer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,26 +31,38 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="38">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
               <folding>
                 <element signature="n#!!block;n#getTranslationData#0" expanded="false" />
-                <element signature="e#1904#2044#0" expanded="false" />
-                <element signature="e#2115#2286#0" expanded="false" />
-                <element signature="e#3591#3669#0" expanded="false" />
-                <element signature="e#3783#3977#0" expanded="false" />
-                <element signature="e#4079#4199#0" expanded="false" />
+                <element signature="e#1897#2037#0" expanded="false" />
+                <element signature="e#2108#2279#0" expanded="false" />
+                <element signature="e#3584#3662#0" expanded="false" />
+                <element signature="e#3776#3970#0" expanded="false" />
+                <element signature="e#4072#4192#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="none_subscribe_header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/none_subscribe_header.ejs">
+      <file leaf-file-name="end_campaign_header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="end_campaign_body.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_body.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,14 +101,12 @@
         <option value="$PROJECT_DIR$/views/footer" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/partials/mail_newcampaign_title.ejs" />
-        <option value="$PROJECT_DIR$/views/partials/end_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/views/partials/reminder_campaign_body" />
         <option value="$PROJECT_DIR$/views/partials/reminder_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/views/campaign_finished.ejs" />
         <option value="$PROJECT_DIR$/views/campaign_registration.ejs" />
         <option value="$PROJECT_DIR$/views/none_subscribe_campaign.ejs" />
         <option value="$PROJECT_DIR$/views/campaign_none_subscribe.ejs" />
-        <option value="$PROJECT_DIR$/views/partials/none_subscribe_header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/none_subscribe_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/campaign_created/campaig_created.js" />
         <option value="$PROJECT_DIR$/public/javascripts/campaign_none_subscribe/campaign_none_subscribe.js" />
@@ -119,13 +128,15 @@
         <option value="$PROJECT_DIR$/public/javascripts/mandrill-API.js" />
         <option value="$PROJECT_DIR$/test-page.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/views/partials/end_campaign_header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/registration_campaign_header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/registration_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/views/partials/new_campaign_header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/new_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/views/partials/reminder_campaign_header.ejs" />
         <option value="$PROJECT_DIR$/views/campaign_reminder.ejs" />
+        <option value="$PROJECT_DIR$/views/partials/none_subscribe_header.ejs" />
+        <option value="$PROJECT_DIR$/views/partials/end_campaign_header.ejs" />
+        <option value="$PROJECT_DIR$/views/partials/end_campaign_body.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -333,24 +344,24 @@
       <workItem from="1477498023752" duration="9000" />
       <workItem from="1477553368225" duration="29939000" />
       <workItem from="1477588553798" duration="11000" />
-      <workItem from="1477639811106" duration="22288000" />
+      <workItem from="1477639811106" duration="23035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101128000" />
+    <option name="totallyTimeSpent" value="101875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20163691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25818452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23240589" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23240589" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -389,13 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_body.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -573,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="13" column="113" selection-start-line="13" selection-start-column="98" selection-end-line="13" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/campaign_created.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -621,7 +618,7 @@
         <state relative-caret-position="408">
           <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
           <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,7 +628,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,23 +675,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/none_subscribe_header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="-51">
+          <caret line="27" column="165" selection-start-line="27" selection-start-column="165" selection-end-line="27" selection-end-column="165" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/end_campaign_body.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="38">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
             <element signature="n#!!block;n#getTranslationData#0" expanded="false" />
-            <element signature="e#1904#2044#0" expanded="false" />
-            <element signature="e#2115#2286#0" expanded="false" />
-            <element signature="e#3591#3669#0" expanded="false" />
-            <element signature="e#3783#3977#0" expanded="false" />
-            <element signature="e#4079#4199#0" expanded="false" />
+            <element signature="e#1897#2037#0" expanded="false" />
+            <element signature="e#2108#2279#0" expanded="false" />
+            <element signature="e#3584#3662#0" expanded="false" />
+            <element signature="e#3776#3970#0" expanded="false" />
+            <element signature="e#4072#4192#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -41,7 +41,7 @@ app.post('/test-page', function (req, res) {
         variable = req.body.variable,
 
         // SENDING CHOSEN VIEW TO RENDER AS EMAIL TEMPLATE
-        html = ejs.renderFile('./views/campaign_none_subscribe.ejs', {data: data}, function (err, result) {
+        html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
             if (err) {
                 console.log(err);
             }
