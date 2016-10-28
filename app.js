@@ -34,23 +34,44 @@ app.post('/test-page', function (req, res) {
     var fromEmail = req.body.fromEmail,
         fromName = req.body.fromName,
         subject = req.body.subject,
-        recipients = req.body.recipients,
+        recipients = req.body.to,
         html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
             if(err) {
                 console.log(err);
             }
             if (result) {
                 html = result;
-                sendEmail(html);
+                sendEmail(html,recipients);
             }
         });
 
-    function sendEmail() {
+    function sendEmail(html, recipients) {
+
+        var to = [];
+        console.log('recipients->',recipients);
+        if (typeof recipients === "string") {
+            console.log('recipients string');
+            toUser = {
+                email: recipients,
+                type: "to"
+            };
+            to.push(toUser);
+        } else {
+            console.log('recipients not string', recipients);
+            for (var i = 0, l = recipients.length; i < l; i++) {
+                var toUser = {
+                    email: recipients[i],
+                    type: "to"
+                };
+                to.push(toUser);
+            }
+        }
+
         mandrill_client.messages.send({
             "message": {
                 "from_email": fromEmail,
                 "from_name": fromName,
-                "to": [{"email": recipients}],
+                "to":to,
                 "subject": subject,
                 "html": html
             }
