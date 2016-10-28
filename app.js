@@ -22,34 +22,40 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-function getFile() {
+ // RETURN FILE WITH ENGLISH OR FRENCH KEYS AND VALUES
+function getTranslationData() {
     var defaultLanguage = 'en';
     var data = require('./data/translation-' + defaultLanguage + '.json');
     return data;
 }
 
-var data = getFile();
+var data = getTranslationData();
 
+    // ROUTE WHICH ACCEPTS POST REQUEST
 app.post('/test-page', function (req, res) {
     var fromEmail = req.body.fromEmail,
         fromName = req.body.fromName,
         subject = req.body.subject,
         recipients = req.body.to,
         logo = req.body.logo,
-        html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
+        variable = req.body.variable,
+
+        // SENDING CHOSEN VIEW TO RENDER AS EMAIL TEMPLATE
+        html = ejs.renderFile('./views/campaign_none_subscribe.ejs', {data: data}, function (err, result) {
             if (err) {
                 console.log(err);
             }
             if (result) {
                 html = result;
-
+                // renderFile IS ASYNC FUNCTION SO I NEED TO SENT MESSAGE IN CALLBACK
                 sendEmail();
             }
         });
-
+    // SENDING EMAIL USING MANDRILL
     function sendEmail() {
         var to = [];
 
+        // CHECK IF RECIPIENTS IS ARRAY AND PUSH DATA
         if (typeof recipients === 'string') {
             toUser = {
                 email: recipients,
@@ -65,10 +71,11 @@ app.post('/test-page', function (req, res) {
                 to.push(toUser);
             }
         }
-
+        // GET ACCESS TO THE DOM AND MODIFY IT`S ELEMENTS
         var $ = cheerio.load("'" + html + "'");
 
         $('#logo').attr('src', logo);
+        $('#new-campaign-body-var').text(variable);
 
         mandrill_client.messages.send({
             "message": {
@@ -77,11 +84,12 @@ app.post('/test-page', function (req, res) {
                 "to": to,
                 "subject": subject,
                 "logo": logo,
+                "variable":variable,
                 "html": $.html()
             }
         });
     }
-
+    // OUTPUT AND CHECK RESULT
     res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + '' + html + ' ' + logo);
 });
 
