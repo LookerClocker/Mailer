@@ -8,6 +8,7 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.16.0",
     "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "ejs": "~2.4.1",

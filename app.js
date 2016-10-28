@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
 var fs = require('fs');
+var cheerio = require('cheerio');
 
-// var mandrill = require('./public/javascripts/mandrill-API.js');
 var mandrill = require('mandrill-api/mandrill'),
     mandrill_client = new mandrill.Mandrill('GJNenewolLmIAzBG8_4f3g');
 var app = express();
@@ -35,29 +35,28 @@ app.post('/test-page', function (req, res) {
         fromName = req.body.fromName,
         subject = req.body.subject,
         recipients = req.body.to,
+        logo = req.body.logo,
         html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
-            if(err) {
+            if (err) {
                 console.log(err);
             }
             if (result) {
                 html = result;
-                sendEmail(html,recipients);
+
+                sendEmail();
             }
         });
 
-    function sendEmail(html, recipients) {
-
+    function sendEmail() {
         var to = [];
-        console.log('recipients->',recipients);
-        if (typeof recipients === "string") {
-            console.log('recipients string');
+
+        if (typeof recipients === 'string') {
             toUser = {
                 email: recipients,
-                type: "to"
+                type: 'to'
             };
             to.push(toUser);
         } else {
-            console.log('recipients not string', recipients);
             for (var i = 0, l = recipients.length; i < l; i++) {
                 var toUser = {
                     email: recipients[i],
@@ -67,18 +66,23 @@ app.post('/test-page', function (req, res) {
             }
         }
 
+        var $ = cheerio.load("'" + html + "'");
+
+        $('#logo').attr('src', logo);
+
         mandrill_client.messages.send({
             "message": {
                 "from_email": fromEmail,
                 "from_name": fromName,
-                "to":to,
+                "to": to,
                 "subject": subject,
-                "html": html
+                "logo": logo,
+                "html": $.html()
             }
         });
     }
 
-    res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + ''+ html );
+    res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + '' + html + ' ' + logo);
 });
 
 app.get('/view-email/campaign_created', function (req, res) {
