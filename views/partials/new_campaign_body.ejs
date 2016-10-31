@@ -1,4 +1,104 @@
 <tr>
+    <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 0px 15px;" class="section-padding">
+        <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0 0 20px 0;"
+               class="responsive-table">
+            <tr>
+                <td align="center" height="100%" valign="top" width="100%" style="padding-bottom: 0px;">
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                        <tr>
+                            <td align="center" valign="top" width="500">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                       style="max-width:500;">
+                                    <tr>
+                                        <td align="center" valign="top" style="font-size:0;">
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0"
+                                                   width="500">
+                                                <tr>
+                                                    <td align="center" valign="top" width="350">
+                                                        <div style="display:inline-block; margin: 0 -2px; max-width:350px; vertical-align:top; width:100%;"
+                                                             class="wrapper">
+
+                                                            <table align="left" border="0" cellpadding="0"
+                                                                   cellspacing="0" width="100%"
+                                                                   style="max-width: 325px; float: right;"
+                                                                   class="wrapper">
+                                                                <tr>
+                                                                    <td style="padding: 0 0 0 0;"
+                                                                        class="no-padding">
+                                                                        <!-- ARTICLE -->
+                                                                        <table border="0" cellspacing="0"
+                                                                               cellpadding="0" width="100%">
+                                                                            <tr>
+                                                                                <td align="center"
+                                                                                    style="padding: 0 0 10px 0; color: #d2293b;  font-size: 30px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;"
+                                                                                    class="padding-copy"><%= data.MAIL_NEWCAMPAIGN_CAMPAIGN_NAME %>
+                                                                                    <span id="newCampaignName">
+                                                                                    </span>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center"
+                                                                                    style="padding: 0 0 5px 0; color: #d2293b;  font-size: 30px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;"
+                                                                                    class="padding-copy"><%= data.MAIL_NEWCAMPAIGN_EARN_MAX %>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center"
+                                                                                    style="padding: 10px 0 15px 0; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #d2293b;  font-size: 30px;"
+                                                                                    class="padding-copy">
+                                                                                    <span id="new-campaign-body-var">
+                                                                                        <%= data.campaign.maxPublisherRevenue %>
+                                                                                    </span> Euros
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 0px 15px;" class="section-padding">
+        <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0 0 20px 0;"
+               class="responsive-table">
+            <tr>
+                <td align="center"
+                    style="padding: 10px 0 15px 0; font-size: 54px; line-height: 1; font-family: Helvetica, Arial, sans-serif; color: #666666;"
+                    class="padding-copy">
+                        <span id="newCampaignTitle">
+                            new-campaign-title
+                        </span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="https://app.valueyournetwork.com"
+                       target="_blank">
+                        <img id="postUrl" src=""
+                             border="0"
+                             alt="Insert alt text here"
+                             style="width:100%;display: block; color: #666666;  font-family: Helvetica, arial, sans-serif; font-size: 16px;"
+                             class="img-max">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
     <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 25px 15px;" class="section-padding">
         <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0 0 20px 0;"
                class="responsive-table">
@@ -23,39 +123,11 @@
                                                                    style="max-width: 325px; float: right;"
                                                                    class="wrapper">
                                                                 <tr>
-                                                                    <td style="padding: 40px 0 0 0;"
+                                                                    <td style="padding: 0 0 0 0;"
                                                                         class="no-padding">
                                                                         <!-- ARTICLE -->
                                                                         <table border="0" cellspacing="0"
                                                                                cellpadding="0" width="100%">
-                                                                            <tr>
-                                                                                <td align="center"
-                                                                                    style="padding: 0 0 5px 0; color: #d2293b;  font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;"
-                                                                                    class="padding-copy"><%= data.MAIL_NEWCAMPAIGN_EARN_MAX %>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td align="center"
-                                                                                    style="padding: 10px 0 15px 0; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;"
-                                                                                    class="padding-copy">
-                                                                                    <span id="new-campaign-body-var">
-                                                                                        <%= data.campaign.maxPublisherRevenue %>
-                                                                                    </span> Euros
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="padding" align="center">
-                                                                                    <a href="http://litmus.com"
-                                                                                       target="_blank">
-                                                                                        <img id="postUrl" src=""
-                                                                                             width="250" height="200"
-                                                                                             border="0"
-                                                                                             alt="Insert alt text here"
-                                                                                             style="display: block; color: #666666;  font-family: Helvetica, arial, sans-serif; font-size: 16px;"
-                                                                                             class="img-max">
-                                                                                    </a>
-                                                                                </td>
-                                                                            </tr>
                                                                             <tr>
                                                                                 <td class="padding" align="center"
                                                                                     style="font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding-top: 3%;">
@@ -117,7 +189,7 @@
     </td>
 </tr>
 <tr>
-    <td bgcolor="#ffffff" align="center" style="padding: 25px 15px 70px 15px;" class="section-padding">
+    <td bgcolor="#ffffff" align="center" style="padding: 25px 15px 40px 15px;" class="section-padding">
         <hr>
         <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
             <tr>
@@ -178,7 +250,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td align="center"
-                                                        style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #d2283b; padding-top: 10px; padding-bottom: 25%;"
+                                                        style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #d2283b; padding-top: 10px; padding-bottom: 2%;"
                                                         class="padding-copy">
                                                         <%= data.MAIL_REGISTRATION_SHARE_THIS_2 %>
                                                     </td>

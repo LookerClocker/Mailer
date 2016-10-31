@@ -31,6 +31,10 @@
   "MAIL_REGISTRATION_STEP_3": "Post your message on your social networks",
   "MAIL_REGISTRATION_START_GET_MONEY": "And start earning money. It's really that simple!",
 
+  "MAIL_NEWCAMPAIGN_TITLE_2_REMINDER": "It's not too late to take part in this campaign",
+  "MAIL_NEWCAMPAIGN_TITLE_1_REMINDER": "Kind reminder",
+  "MAIL_NEWCAMPAIGN_CAMPAIGN_NAME": "Campaign:",
+
     "campaign": {
       "maxPublisherRevenue": "variable1",
       "campaignMailNotice" : "variable2",

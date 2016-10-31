@@ -31,6 +31,11 @@
   "MAIL_REGISTRATION_STEP_3": "Postez votre message sur vos réseaux sociaux",
   "MAIL_REGISTRATION_START_GET_MONEY": "Et commencez à gagner de l'argent. C'est aussi simple que ça !",
 
+  "MAIL_NEWCAMPAIGN_TITLE_2_REMINDER": "Il vous est encore possible de participer à cette campagne.",
+  "MAIL_NEWCAMPAIGN_TITLE_1_REMINDER": "Petit Rappel.",
+  "MAIL_NEWCAMPAIGN_PARAGRAPH_1_REMINDER": "La campagne est encore disponible. Plus vous relayez la campagne rapidement, plus votre potentiel de gain est important.",
+  "MAIL_NEWCAMPAIGN_CAMPAIGN_NAME": "Campagne :",
+
     "campaign": {
       "maxPublisherRevenue": "variable1",
       "campaignMailNotice" : "variable2",

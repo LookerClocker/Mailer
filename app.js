@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // RETURN FILE WITH ENGLISH OR FRENCH KEYS AND VALUES
 function getTranslationData() {
-    var defaultLanguage = 'en';
+    var defaultLanguage = 'fr';
     var data = require('./data/translation-' + defaultLanguage + '.json');
     return data;
 }
@@ -37,14 +37,16 @@ app.post('/test-page', function (req, res) {
         fromName = req.body.fromName,
         subject = req.body.subject,
         recipients = req.body.to,
-        logo = req.body.logo,
         baseUrl = req.body.baseUrl,
         postUrl = req.body.postUrl,
         postToken = req.body.postToken,
-        variable = req.body.variable,
+        campaignTitle = req.body.campaignTitle,
+        // for created campaign
+        campaignMaxRevenue = req.body.campaignMaxRevenue,
+        campaignName = req.body.campaignName,
 
         // SENDING CHOSEN VIEW TO RENDER AS EMAIL TEMPLATE
-        html = ejs.renderFile('./views/campaign_created.ejs', {data: data}, function (err, result) {
+        html = ejs.renderFile('./views/campaign_registration.ejs', {data: data}, function (err, result) {
             if (err) {
                 console.log(err);
             }
@@ -85,11 +87,12 @@ app.post('/test-page', function (req, res) {
                 "from_name": fromName,
                 "to": to,
                 "subject": subject,
-                "logo": logo,
                 "baseUrl": baseUrl,
                 "postUrl": postUrl,
                 "postToken": postToken,
-                "variable": variable,
+                "campaignTitle": campaignTitle,
+                "campaignMaxRevenue": campaignMaxRevenue,
+                "campaignName": campaignName,
                 "html": $.html()
             }
         });
@@ -106,9 +109,12 @@ app.post('/test-page', function (req, res) {
             $('#android').attr('src', baseUrl + $('#android').attr('src'));
 
             $('#campaignImage').attr('src', baseUrl + $('#campaignImage').attr('src'));
+            $('#newCampaignTitle').text(campaignTitle);
+            $('#newCampaignName').text(campaignName);
 
-            $('#postUrl').attr('src', baseUrl + postUrl);
+            // $('#postUrl').attr('src', baseUrl + postUrl);
 
+            $('#postUrl').attr('src', postUrl);
             // REGISTARTION CAMPAIGN
             $('#step1').attr('src', baseUrl + $('#step1').attr('src'));
             $('#step2').attr('src', baseUrl + $('#step2').attr('src'));
@@ -121,15 +127,13 @@ app.post('/test-page', function (req, res) {
 
             $('#changePasswordHref').attr('href', reference);
             $('#changePasswordTitle').text(reference);
-
             $('#pubishAccount').attr('href', publishHref);
-
-            $('#new-campaign-body-var').text(variable);
+            $('#new-campaign-body-var').text(campaignMaxRevenue);
         }
     }
 
     // OUTPUT AND CHECK RESULT
-    res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + '' + html + ' ' + logo);
+    res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + '' + html);
 });
 
 app.get('/view-email/campaign_created', function (req, res) {
