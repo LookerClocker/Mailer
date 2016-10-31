@@ -1,7 +1,8 @@
 <tr>
     <td align="center"
         style="padding: 0 0 40px 0;  font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;"
-        class="padding-copy"><hr style="margin-bottom: 5%; width: 50%;"><%=data.MAIL_REGISTRATION_HOW_IT_WORKS%>
+        class="padding-copy">
+        <hr style="margin-bottom: 5%; width: 50%;"><%= data.MAIL_REGISTRATION_HOW_IT_WORKS %>
     </td>
 </tr>
 <tr>
@@ -22,30 +23,33 @@
                                                 <tr>
                                                     <td class="padding" align="center" style="padding-bottom: 40px;">
                                                         <a href="http://litmus.com" target="_blank">
-                                                            <img src="/image/picture.jpg"
+                                                            <img id="step1"
+                                                                 src="/images/icone1.png"
                                                                  border="0" alt="Insert alt text here"
                                                                  style="margin: 40px; display: inline-block; width:60%; color: #666666;  font-family: Helvetica, arial, sans-serif; font-size: 16px;"
                                                                  class="img-max">
                                                         </a>
-                                                        <span><%=data.MAIL_REGISTRATION_STEP_1%></span>
+                                                        <span><%= data.MAIL_REGISTRATION_STEP_1 %></span>
                                                     </td>
                                                     <td class="padding" align="center" style="padding-bottom: 40px;">
                                                         <a href="http://litmus.com" target="_blank">
-                                                            <img src="/image/picture.jpg"
+                                                            <img id="step2"
+                                                                 src="/images/icone2.png"
                                                                  border="0" alt="Insert alt text here"
                                                                  style="margin: 40px; width:60%; display: inline-block;  color: #666666;  font-family: Helvetica, arial, sans-serif; font-size: 16px;"
                                                                  class="img-max">
                                                         </a>
-                                                        <span><%=data.MAIL_REGISTRATION_STEP_2%></span>
+                                                        <span><%= data.MAIL_REGISTRATION_STEP_2 %></span>
                                                     </td>
                                                     <td class="padding" align="center" style="padding-bottom: 40px;">
                                                         <a href="http://litmus.com" target="_blank">
-                                                            <img src="/image/picture.jpg"
+                                                            <img id="step3"
+                                                                 src="/images/icone3.png"
                                                                  border="0" alt="Insert alt text here"
                                                                  style="margin: 40px; display: inline-block; width:60%;  color: #666666;  font-family: Helvetica, arial, sans-serif; font-size: 16px;"
                                                                  class="img-max">
                                                         </a>
-                                                        <span><%=data.MAIL_REGISTRATION_STEP_3%></span>
+                                                        <span><%= data.MAIL_REGISTRATION_STEP_3 %></span>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -63,7 +67,7 @@
 <tr>
     <td align="center"
         style="padding: 0 0 40px 0;  font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal;"
-        class="padding-copy"><%=data.MAIL_REGISTRATION_START_GET_MONEY%>
+        class="padding-copy"><%= data.MAIL_REGISTRATION_START_GET_MONEY %>
     </td>
 </tr>
 <tr>
@@ -81,21 +85,31 @@
                                         <td align="center"
                                             style="line-height: 1.5; font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #d2283b; padding-top: 30px; padding-bottom: 10%;"
                                             class="padding-copy">
-                                            <%=data.DOWNLOAD_MOBILE_APPLICATIONS%>
+                                            <%= data.DOWNLOAD_MOBILE_APPLICATIONS %>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center"
                                             style="padding: 0 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding-bottom: 10%;"
                                             class="padding-copy">
-                                            <img src="/image/appStore.png" alt=""/>
+                                            <a href="https://itunes.apple.com/ua/app/value-your-network/id1106947405?mt=8">
+                                                <img
+                                                        style="width: 60%;"
+                                                        id="ios"
+                                                        src="/images/ios.png" alt=""/>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center"
                                             style="padding: 0 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding-bottom: 10%;"
                                             class="padding-copy">
-                                            <img src="/image/android.png" alt=""/>
+                                            <a href="https://play.google.com/store/apps/details?id=com.valueyournetwork&hl=fr">
+                                                <img
+                                                        style="width: 60%;"
+                                                        id="android"
+                                                        src="/images/android.png" alt=""/>
+                                            </a>
                                         </td>
                                     </tr>
                                 </table>
@@ -114,22 +128,34 @@
                                                     <td align="center"
                                                         style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; padding-top: 30px; padding-bottom: 25%;"
                                                         class="padding-copy">
-                                                        <span style="color: #d2283b; line-height: 2;"><%=data.MAIL_REGISTRATION_SHARE_THIS_1%></span><br>
-                                                        <span style="color: #000;"><%=data.MAIL_REGISTRATION_SHARE_THIS_2%></span>
+                                                        <span style="color: #d2283b; line-height: 2;"><%= data.MAIL_REGISTRATION_SHARE_THIS_1 %></span><br>
+                                                        <span style="color: #000;"><%= data.MAIL_REGISTRATION_SHARE_THIS_2 %></span>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="padding" align="center"
                                                         style="font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding-top: 3%;">
-                                                        <a href="#"><img
-                                                                    style="background-color: #000; border-radius: 50%; "
-                                                                    src="/image/fb.png" alt=""/></a>
-                                                        <a href="#"><img
-                                                                    style="background-color: #000; border-radius: 50%; "
-                                                                    src="/image/in.png" alt=""/></a>
-                                                        <a href="#"><img
-                                                                    style="background-color: #000; border-radius: 50%; "
-                                                                    src="/image/tweet.png" alt=""/></a>
+                                                        <a target="_blank"
+                                                           href="https://www.facebook.com/share.php?u=http%3A%2F%2Fwww.valueyournetwork.com&display=popup&ref=plugin&src=share_button">
+                                                            <img
+                                                                    id="facebook"
+                                                                    style="border-radius: 50%; "
+                                                                    src="/templates/simples/img/facebook.png"
+                                                                    alt=""/></a>
+                                                        <a target="_blank"
+                                                           href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.valueyournetwork.com">
+                                                            <img
+                                                                    id="linkedin"
+                                                                    style="border-radius: 50%; "
+                                                                    src="/templates/simples/img/linkedin.png"
+                                                                    alt=""/></a>
+                                                        <a target="_blank"
+                                                           href="https://twitter.com/share?url=http%3A%2F%2Fwww.valueyournetwork.com">
+                                                            <img
+                                                                    id="twitter"
+                                                                    style="border-radius: 50%; "
+                                                                    src="/templates/simples/img/twitter.png"
+                                                                    alt=""/></a>
                                                     </td>
                                                 </tr>
                                             </table>

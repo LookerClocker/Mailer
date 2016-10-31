@@ -31,10 +31,11 @@
   "MAIL_REGISTRATION_STEP_3": "Post your message on your social networks",
   "MAIL_REGISTRATION_START_GET_MONEY": "And start earning money. It's really that simple!",
 
-  "var": {
     "campaign": {
       "maxPublisherRevenue": "variable1",
-      "campaignMailNotice" : "variable2"
-    }
+      "campaignMailNotice" : "variable2",
+      "proposal_1": {
+        "campaignImage": ""
+      }
   }
 }

@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
- // RETURN FILE WITH ENGLISH OR FRENCH KEYS AND VALUES
+// RETURN FILE WITH ENGLISH OR FRENCH KEYS AND VALUES
 function getTranslationData() {
     var defaultLanguage = 'en';
     var data = require('./data/translation-' + defaultLanguage + '.json');
@@ -31,13 +31,16 @@ function getTranslationData() {
 
 var data = getTranslationData();
 
-    // ROUTE WHICH ACCEPTS POST REQUEST
+// ROUTE WHICH ACCEPTS POST REQUEST
 app.post('/test-page', function (req, res) {
     var fromEmail = req.body.fromEmail,
         fromName = req.body.fromName,
         subject = req.body.subject,
         recipients = req.body.to,
         logo = req.body.logo,
+        baseUrl = req.body.baseUrl,
+        postUrl = req.body.postUrl,
+        postToken = req.body.postToken,
         variable = req.body.variable,
 
         // SENDING CHOSEN VIEW TO RENDER AS EMAIL TEMPLATE
@@ -74,8 +77,7 @@ app.post('/test-page', function (req, res) {
         // GET ACCESS TO THE DOM AND MODIFY IT`S ELEMENTS
         var $ = cheerio.load("'" + html + "'");
 
-        $('#logo').attr('src', logo);
-        $('#new-campaign-body-var').text(variable);
+        bindToHtml();
 
         mandrill_client.messages.send({
             "message": {
@@ -84,11 +86,48 @@ app.post('/test-page', function (req, res) {
                 "to": to,
                 "subject": subject,
                 "logo": logo,
-                "variable":variable,
+                "baseUrl": baseUrl,
+                "postUrl": postUrl,
+                "postToken": postToken,
+                "variable": variable,
                 "html": $.html()
             }
         });
+
+        function bindToHtml() {
+
+            $('#logo').attr('src', baseUrl + $('#logo').attr('src'));
+
+            $('#facebook').attr('src', baseUrl + $('#facebook').attr('src'));
+            $('#linkedin').attr('src', baseUrl + $('#linkedin').attr('src'));
+            $('#twitter').attr('src', baseUrl + $('#twitter').attr('src'));
+
+            $('#ios').attr('src', baseUrl + $('#ios').attr('src'));
+            $('#android').attr('src', baseUrl + $('#android').attr('src'));
+
+            $('#campaignImage').attr('src', baseUrl + $('#campaignImage').attr('src'));
+
+            $('#postUrl').attr('src', baseUrl + postUrl);
+
+            // REGISTARTION CAMPAIGN
+            $('#step1').attr('src', baseUrl + $('#step1').attr('src'));
+            $('#step2').attr('src', baseUrl + $('#step2').attr('src'));
+            $('#step3').attr('src', baseUrl + $('#step3').attr('src'));
+
+
+            // FORGOT PASSWORD CAMPAIGN
+            var reference = baseUrl + $('#changePasswordTitle').text() + postToken,
+                publishHref = baseUrl + $('#pubishAccount').attr('href');
+
+            $('#changePasswordHref').attr('href', reference);
+            $('#changePasswordTitle').text(reference);
+
+            $('#pubishAccount').attr('href', publishHref);
+
+            $('#new-campaign-body-var').text(variable);
+        }
     }
+
     // OUTPUT AND CHECK RESULT
     res.send(subject + ' ' + recipients + ' ' + fromEmail + ' ' + fromName + '' + html + ' ' + logo);
 });

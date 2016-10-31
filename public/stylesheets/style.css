@@ -1,7 +1,7 @@
 /* CLIENT-SPECIFIC STYLES */
 body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
 table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized images in Internet Explorer */
 
 /* RESET STYLES */
 img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}

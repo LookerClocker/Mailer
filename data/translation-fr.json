@@ -31,10 +31,11 @@
   "MAIL_REGISTRATION_STEP_3": "Postez votre message sur vos réseaux sociaux",
   "MAIL_REGISTRATION_START_GET_MONEY": "Et commencez à gagner de l'argent. C'est aussi simple que ça !",
 
-  "var": {
     "campaign": {
-      "maxPublisherRevenue": "french variable1",
-      "campaignMailNotice" : "french variable2"
-    }
+      "maxPublisherRevenue": "variable1",
+      "campaignMailNotice" : "variable2",
+      "proposal_1": {
+        "campaignImage": ""
+      }
   }
 }
